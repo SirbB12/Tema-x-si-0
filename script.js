@@ -1,10 +1,10 @@
-var turn= "❌";
+var turn= true;
 //Functia 1
 let scriex1 = function(){
    
     if(turn === true){
         document.getElementsByClassName("unu")[0].innerText =  "❌"
-        turn = false;
+       turn = false;
     }else{
         document.getElementsByClassName("unu")[0].innerText =  "⭕️"
         turn = true;
@@ -15,12 +15,12 @@ let scriex1 = function(){
 
 //Functia 2
 let scriex2 = function(){
-    if(turn === true){
+    if(turn === false){
         document.getElementsByClassName("doi")[0].innerText =  "⭕️"
-        turn = false;
+        turn = true;
     }else{
         document.getElementsByClassName("doi")[0].innerText =  "❌"
-        turn = true;
+        turn = false;
     }
     
 }
@@ -39,12 +39,12 @@ let scriex3 = function(){
 
 //Functia 4
 let scriex4 = function(){
-    if(turn === true){
+    if(turn === false){
         document.getElementsByClassName("patru")[0].innerText =  "⭕️"
-        turn = false;
+      turn = true;
     }else{
         document.getElementsByClassName("patru")[0].innerText =  "❌"
-        turn = true;
+       turn = false;
     }
     
 }
@@ -53,7 +53,7 @@ let scriex4 = function(){
 let scriex5 = function(){
     if(turn === true){
         document.getElementsByClassName("cinci")[0].innerText =  "❌"
-        turn = false;
+       turn = false;
     }else{
         document.getElementsByClassName("cinci")[0].innerText =  "⭕️"
         turn = true;
@@ -65,7 +65,7 @@ let scriex5 = function(){
 let scriex6 = function(){
     if(turn === false){
         document.getElementsByClassName("sase")[0].innerText =  "⭕️"
-        turn = true;
+       turn = true;
       
     }else{
         document.getElementsByClassName("sase")[0].innerText =  "❌"
@@ -80,7 +80,7 @@ let scriex7 = function(){
         turn = false;
     }else{
         document.getElementsByClassName("sapte")[0].innerText =  "⭕️"
-        turn = true;
+      turn = true;
     }
     
 }
@@ -93,7 +93,7 @@ let scriex8 = function(){
       
     }else{
         document.getElementsByClassName("opt")[0].innerText =  "❌"
-        turn = false;
+       turn = false;
     }
     
 }
@@ -107,7 +107,7 @@ let scriex9 = function(){
         document.getElementsByClassName("noua")[0].innerText =  "⭕️"
         turn = true;
     }
-    
+    document.getElementsByClassName("final")[0].innerText = "Joc terminat"   
 }
 
 //.........................................................................
